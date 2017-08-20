@@ -7,158 +7,135 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		105BD9FC3BD7A7FC1A86EBEF4468CB25 /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C918B9AF7818FBAB5DC9DF3242EA0F7C /* AutoEquatable.generated.swift */; };
-		27F48EE97E5C7621380985A6F6804EC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		49E9A45821B6DA7CA46EE38DEC935199 /* AutoHashable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88EB7031DBB842A9FE90A14CBD176E2 /* AutoHashable.generated.swift */; };
-		50452E0BF6F6C7E0D376EBC081666DAD /* Pods-PatientManagement-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D6ECA7970D2FF3220D2DA6BCFFA20E /* Pods-PatientManagement-dummy.m */; };
-		55E2D04F32F10C4A6612549EC9F36DA8 /* ADMozaikLayoutCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00316FA3AD312DC6216553BAF0DF2662 /* ADMozaikLayoutCache.swift */; };
-		A86FCDD3A6107880773259D5D779B96E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		B1F79A7AB3539B8EBC9137873977C529 /* ADMozaikLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD78DDAE71711674DFACCB047E8449 /* ADMozaikLayoutDelegate.swift */; };
-		B3985E1601B83B18E354031CA6A29A3A /* ADMozaikLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A204F761CD66AAF066920CFBCEDC818 /* ADMozaikLayout.swift */; };
-		BAF079D6E74741F61933CCF57C0D8ADD /* ADMozaikLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBC580BEA6EFB9507F45FD7683DB0B6 /* ADMozaikLayoutAttributes.swift */; };
-		D3A5F76842FF26B12FF5A269337F4167 /* ADMozaicCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D6809C8822328C72AF4DF8F28C8FFD /* ADMozaicCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E46DF7B7A1FCBF721FC415535CC4D088 /* Pods-PatientManagement-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1583177686C0BFDBEFCE9DA807432F71 /* Pods-PatientManagement-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5369749BCC13E447BD94F3E1EFFC567 /* ADMozaikLayoutStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFFAB6ADCB7C2E5FC87EE670181AF0 /* ADMozaikLayoutStructs.swift */; };
-		E7D8EDFAF1605931B0B20017B718E006 /* ADMozaicCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAF1C75FD68C0D8618DA46CC42DCF47 /* ADMozaicCollectionViewLayout-dummy.m */; };
-		F4D7EDF365D26A1FAE1F476BEBDFD33F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		F8DB51FF8D553F3AD28098757AC2EA2A /* PhantomProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563BEABB40A294CB16DF4F0445E95EE2 /* PhantomProtocols.swift */; };
-		FC5A9DD228CA8B6430B3C22758F551D6 /* ADMozaikLayoutSectionMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93231E1B9A09FC3B67AFE63DB2A3E9F9 /* ADMozaikLayoutSectionMatrix.swift */; };
-		FD44701E90E3CA4BBE6536F5E7EDB040 /* ADMozaikLayoutSectionGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606A3E784A1969860BAAD221E01F0091 /* ADMozaikLayoutSectionGeometry.swift */; };
+		2C6254A2AF41411A5E6ED6C7AADCC1FA /* Pods-PatientManagement-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D6ECA7970D2FF3220D2DA6BCFFA20E /* Pods-PatientManagement-dummy.m */; };
+		5D96D498C71CD9B88C0D42BD6D93E294 /* CHTCollectionViewWaterfallLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBE717C498C1F200026076C151F82EB0 /* CHTCollectionViewWaterfallLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6227A88C6A84983DB4A2EF5A6A9042C6 /* Pods-PatientManagement-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1583177686C0BFDBEFCE9DA807432F71 /* Pods-PatientManagement-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72A15E0767D866990AABAD13ABFED4D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7D4258A7B8DE5B14B7B4B91D6B955029 /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14896A6D5F9DFB449906C925D3FC5AB /* CHTCollectionViewWaterfallLayout.swift */; };
+		AABDBDD3A0BE5293C0F71603289EDD02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CD5E4D782A8BED6744F29F6D5A6C2651 /* CHTCollectionViewWaterfallLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8FE841D92F5C387D821A14F507B862 /* CHTCollectionViewWaterfallLayout-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A324B48D2EA8A340BD82FEE12312FB48 /* PBXContainerItemProxy */ = {
+		A893885B44635549D90A22D72DDF7E70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7814BB29C43881C657824C85B7870715;
-			remoteInfo = ADMozaicCollectionViewLayout;
+			remoteGlobalIDString = 83DBBCE523C3F780DFE1B689B272DDE8;
+			remoteInfo = CHTCollectionViewWaterfallLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00316FA3AD312DC6216553BAF0DF2662 /* ADMozaikLayoutCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutCache.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutCache.swift; sourceTree = "<group>"; };
-		02C070CBD609167AEC836F9712450E5C /* Pods_PatientManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PatientManagement.framework; path = "Pods-PatientManagement.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0433ECEC523A548258FC1E5EF08DFC3B /* ADMozaicCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ADMozaicCollectionViewLayout.modulemap; sourceTree = "<group>"; };
-		06FFFAB6ADCB7C2E5FC87EE670181AF0 /* ADMozaikLayoutStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutStructs.swift; path = ADMozaikCollectionViewLayout/Public/ADMozaikLayoutStructs.swift; sourceTree = "<group>"; };
-		0A204F761CD66AAF066920CFBCEDC818 /* ADMozaikLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayout.swift; path = ADMozaikCollectionViewLayout/Public/ADMozaikLayout.swift; sourceTree = "<group>"; };
 		1583177686C0BFDBEFCE9DA807432F71 /* Pods-PatientManagement-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PatientManagement-umbrella.h"; sourceTree = "<group>"; };
-		253585DE80076EB68C236FD6701C9EDF /* ADMozaicCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ADMozaicCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
-		3CAF1C75FD68C0D8618DA46CC42DCF47 /* ADMozaicCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ADMozaicCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
+		25C87EF5109DE867A472780744A863D5 /* CHTCollectionViewWaterfallLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CHTCollectionViewWaterfallLayout.framework; path = CHTCollectionViewWaterfallLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B6681522057725E3EB92104C85576B2 /* CHTCollectionViewWaterfallLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CHTCollectionViewWaterfallLayout.modulemap; sourceTree = "<group>"; };
 		47446FA5C179E69B6396F408753DF61A /* Pods-PatientManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatientManagement.release.xcconfig"; sourceTree = "<group>"; };
-		489F860956811D82E2F2F8A44DC6F808 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		563BEABB40A294CB16DF4F0445E95EE2 /* PhantomProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhantomProtocols.swift; path = ADMozaikCollectionViewLayout/Public/PhantomProtocols.swift; sourceTree = "<group>"; };
-		5DBC580BEA6EFB9507F45FD7683DB0B6 /* ADMozaikLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutAttributes.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutAttributes.swift; sourceTree = "<group>"; };
 		5FC580AD0C572381B0D22550A37D305A /* Pods-PatientManagement-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PatientManagement-resources.sh"; sourceTree = "<group>"; };
-		606A3E784A1969860BAAD221E01F0091 /* ADMozaikLayoutSectionGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutSectionGeometry.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutSectionGeometry.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6C5723DAB01F56AA71FE44D77D6AA9C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FBEDF3665621EEF77DDDB3EA13DC246 /* CHTCollectionViewWaterfallLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHTCollectionViewWaterfallLayout-prefix.pch"; sourceTree = "<group>"; };
 		71359FAA070413614BB76A9AA74E5FFB /* Pods-PatientManagement-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PatientManagement-frameworks.sh"; sourceTree = "<group>"; };
-		7AABB7A8DDB45AD0AE7A1C9F6E2319E8 /* ADMozaicCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ADMozaicCollectionViewLayout.framework; path = ADMozaicCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D6ECA7970D2FF3220D2DA6BCFFA20E /* Pods-PatientManagement-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PatientManagement-dummy.m"; sourceTree = "<group>"; };
 		86BF4F9FFE80B238AAAAF6AFCDF0BF6D /* Pods-PatientManagement-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PatientManagement-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93231E1B9A09FC3B67AFE63DB2A3E9F9 /* ADMozaikLayoutSectionMatrix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutSectionMatrix.swift; path = ADMozaikCollectionViewLayout/Private/ADMozaikLayoutSectionMatrix.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9BBD78DDAE71711674DFACCB047E8449 /* ADMozaikLayoutDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ADMozaikLayoutDelegate.swift; path = ADMozaikCollectionViewLayout/Public/ADMozaikLayoutDelegate.swift; sourceTree = "<group>"; };
-		A6D6809C8822328C72AF4DF8F28C8FFD /* ADMozaicCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ADMozaicCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
 		A84C1766775582C3D720195A18603281 /* Pods-PatientManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatientManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		AB8FE841D92F5C387D821A14F507B862 /* CHTCollectionViewWaterfallLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHTCollectionViewWaterfallLayout-dummy.m"; sourceTree = "<group>"; };
 		B2F7F791C231876660806546DEDC8D71 /* Pods-PatientManagement.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PatientManagement.modulemap"; sourceTree = "<group>"; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BA8905E8F3CA32B34872BC2BB171F149 /* ADMozaicCollectionViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ADMozaicCollectionViewLayout.xcconfig; sourceTree = "<group>"; };
-		C918B9AF7818FBAB5DC9DF3242EA0F7C /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoEquatable.generated.swift; path = ADMozaikCollectionViewLayout/Sourcery/CodeGenerated/AutoEquatable.generated.swift; sourceTree = "<group>"; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E88EB7031DBB842A9FE90A14CBD176E2 /* AutoHashable.generated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoHashable.generated.swift; path = ADMozaikCollectionViewLayout/Sourcery/CodeGenerated/AutoHashable.generated.swift; sourceTree = "<group>"; };
+		C14896A6D5F9DFB449906C925D3FC5AB /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
+		CBE717C498C1F200026076C151F82EB0 /* CHTCollectionViewWaterfallLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHTCollectionViewWaterfallLayout-umbrella.h"; sourceTree = "<group>"; };
+		D17EE5BB82CB3A9D4141DA015BFA103D /* CHTCollectionViewWaterfallLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHTCollectionViewWaterfallLayout.xcconfig; sourceTree = "<group>"; };
+		D44AF262824EBC1E69153F2A1B46FB01 /* Pods_PatientManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PatientManagement.framework; path = "Pods-PatientManagement.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04679AEEFEB3BD5B22CD26F0F85B139 /* Pods-PatientManagement-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PatientManagement-acknowledgements.plist"; sourceTree = "<group>"; };
 		FBE7F24C4525FFBECC25B3D49C7BAE67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		89E0FFD54EC9CE1330FBDD5849506D45 /* Frameworks */ = {
+		55A62AFAAA3306C730862F417CF48F93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A86FCDD3A6107880773259D5D779B96E /* Foundation.framework in Frameworks */,
-				F4D7EDF365D26A1FAE1F476BEBDFD33F /* UIKit.framework in Frameworks */,
+				AABDBDD3A0BE5293C0F71603289EDD02 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA2767772D8487B9CC65499472C60FB6 /* Frameworks */ = {
+		FD951BD607EDB5150719C97E3FE47345 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F48EE97E5C7621380985A6F6804EC3 /* Foundation.framework in Frameworks */,
+				72A15E0767D866990AABAD13ABFED4D6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		3A897A2957C46EA2C8EF65D09D02F92A /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+				C14896A6D5F9DFB449906C925D3FC5AB /* CHTCollectionViewWaterfallLayout.swift */,
 			);
-			name = Frameworks;
+			name = Swift;
 			sourceTree = "<group>";
 		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+		3B9C110BF282F6836E90F88C2E32BACA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+				9D00ADE4878233845FFB86659304207A /* CHTCollectionViewWaterfallLayout */,
 			);
-			name = iOS;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		6F16A34E06B0D435C285D8410A732835 /* Support Files */ = {
+		5863083E8FBE0041CC3980931AD292E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0433ECEC523A548258FC1E5EF08DFC3B /* ADMozaicCollectionViewLayout.modulemap */,
-				BA8905E8F3CA32B34872BC2BB171F149 /* ADMozaicCollectionViewLayout.xcconfig */,
-				3CAF1C75FD68C0D8618DA46CC42DCF47 /* ADMozaicCollectionViewLayout-dummy.m */,
-				253585DE80076EB68C236FD6701C9EDF /* ADMozaicCollectionViewLayout-prefix.pch */,
-				A6D6809C8822328C72AF4DF8F28C8FFD /* ADMozaicCollectionViewLayout-umbrella.h */,
-				489F860956811D82E2F2F8A44DC6F808 /* Info.plist */,
+				25C87EF5109DE867A472780744A863D5 /* CHTCollectionViewWaterfallLayout.framework */,
+				D44AF262824EBC1E69153F2A1B46FB01 /* Pods_PatientManagement.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ADMozaicCollectionViewLayout";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				D3F8C700363CC2A2766C2158DC1FE578 /* Pods */,
-				8D8FD1E4DCE90C697EBDF7D3DE516331 /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3B9C110BF282F6836E90F88C2E32BACA /* Pods */,
+				5863083E8FBE0041CC3980931AD292E3 /* Products */,
 				F47188FE7B4CA33A7AF5770ACE1AB970 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8D8FD1E4DCE90C697EBDF7D3DE516331 /* Products */ = {
+		91A96C407221489A0674D85A71E7677C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7AABB7A8DDB45AD0AE7A1C9F6E2319E8 /* ADMozaicCollectionViewLayout.framework */,
-				02C070CBD609167AEC836F9712450E5C /* Pods_PatientManagement.framework */,
+				2B6681522057725E3EB92104C85576B2 /* CHTCollectionViewWaterfallLayout.modulemap */,
+				D17EE5BB82CB3A9D4141DA015BFA103D /* CHTCollectionViewWaterfallLayout.xcconfig */,
+				AB8FE841D92F5C387D821A14F507B862 /* CHTCollectionViewWaterfallLayout-dummy.m */,
+				6FBEDF3665621EEF77DDDB3EA13DC246 /* CHTCollectionViewWaterfallLayout-prefix.pch */,
+				CBE717C498C1F200026076C151F82EB0 /* CHTCollectionViewWaterfallLayout-umbrella.h */,
+				6C5723DAB01F56AA71FE44D77D6AA9C3 /* Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/CHTCollectionViewWaterfallLayout";
 			sourceTree = "<group>";
 		};
-		BA3A484242F446546AFE702DDF29F7BA /* ADMozaicCollectionViewLayout */ = {
+		9D00ADE4878233845FFB86659304207A /* CHTCollectionViewWaterfallLayout */ = {
 			isa = PBXGroup;
 			children = (
-				0A204F761CD66AAF066920CFBCEDC818 /* ADMozaikLayout.swift */,
-				5DBC580BEA6EFB9507F45FD7683DB0B6 /* ADMozaikLayoutAttributes.swift */,
-				00316FA3AD312DC6216553BAF0DF2662 /* ADMozaikLayoutCache.swift */,
-				9BBD78DDAE71711674DFACCB047E8449 /* ADMozaikLayoutDelegate.swift */,
-				606A3E784A1969860BAAD221E01F0091 /* ADMozaikLayoutSectionGeometry.swift */,
-				93231E1B9A09FC3B67AFE63DB2A3E9F9 /* ADMozaikLayoutSectionMatrix.swift */,
-				06FFFAB6ADCB7C2E5FC87EE670181AF0 /* ADMozaikLayoutStructs.swift */,
-				C918B9AF7818FBAB5DC9DF3242EA0F7C /* AutoEquatable.generated.swift */,
-				E88EB7031DBB842A9FE90A14CBD176E2 /* AutoHashable.generated.swift */,
-				563BEABB40A294CB16DF4F0445E95EE2 /* PhantomProtocols.swift */,
-				6F16A34E06B0D435C285D8410A732835 /* Support Files */,
+				91A96C407221489A0674D85A71E7677C /* Support Files */,
+				3A897A2957C46EA2C8EF65D09D02F92A /* Swift */,
 			);
-			name = ADMozaicCollectionViewLayout;
-			path = ADMozaicCollectionViewLayout;
+			name = CHTCollectionViewWaterfallLayout;
+			path = CHTCollectionViewWaterfallLayout;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C5AC23E2B83418B8E7B6890AC145A64A /* Pods-PatientManagement */ = {
@@ -179,12 +156,12 @@
 			path = "Target Support Files/Pods-PatientManagement";
 			sourceTree = "<group>";
 		};
-		D3F8C700363CC2A2766C2158DC1FE578 /* Pods */ = {
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				BA3A484242F446546AFE702DDF29F7BA /* ADMozaicCollectionViewLayout */,
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
-			name = Pods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		F47188FE7B4CA33A7AF5770ACE1AB970 /* Targets Support Files */ = {
@@ -198,58 +175,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		84411071C0B1F98039F94E4DCFA94946 /* Headers */ = {
+		0F174A0C57509716A2747B248F047F2D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E46DF7B7A1FCBF721FC415535CC4D088 /* Pods-PatientManagement-umbrella.h in Headers */,
+				6227A88C6A84983DB4A2EF5A6A9042C6 /* Pods-PatientManagement-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC193AFD1A8D5219457634FB2A800BC1 /* Headers */ = {
+		8D491E5A3CFF71BD9C173CBBECE1076D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A5F76842FF26B12FF5A269337F4167 /* ADMozaicCollectionViewLayout-umbrella.h in Headers */,
+				5D96D498C71CD9B88C0D42BD6D93E294 /* CHTCollectionViewWaterfallLayout-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7814BB29C43881C657824C85B7870715 /* ADMozaicCollectionViewLayout */ = {
+		83DBBCE523C3F780DFE1B689B272DDE8 /* CHTCollectionViewWaterfallLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0A957E2290E4DCF212FFC1CF0A46923 /* Build configuration list for PBXNativeTarget "ADMozaicCollectionViewLayout" */;
+			buildConfigurationList = 7151B549D788AB03287452A1205A14CD /* Build configuration list for PBXNativeTarget "CHTCollectionViewWaterfallLayout" */;
 			buildPhases = (
-				072A75094DB1A65593BD5CD8549BB486 /* Sources */,
-				89E0FFD54EC9CE1330FBDD5849506D45 /* Frameworks */,
-				EC193AFD1A8D5219457634FB2A800BC1 /* Headers */,
+				586A662234293D7F6DA248DF5EB34FE2 /* Sources */,
+				55A62AFAAA3306C730862F417CF48F93 /* Frameworks */,
+				8D491E5A3CFF71BD9C173CBBECE1076D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ADMozaicCollectionViewLayout;
-			productName = ADMozaicCollectionViewLayout;
-			productReference = 7AABB7A8DDB45AD0AE7A1C9F6E2319E8 /* ADMozaicCollectionViewLayout.framework */;
+			name = CHTCollectionViewWaterfallLayout;
+			productName = CHTCollectionViewWaterfallLayout;
+			productReference = 25C87EF5109DE867A472780744A863D5 /* CHTCollectionViewWaterfallLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9BF0EEB06B9DC366E6D81C439918CAF0 /* Pods-PatientManagement */ = {
+		E01FABADF67884FC72C07480FB88A6C5 /* Pods-PatientManagement */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65EBD39BD6576D7D99D30C7FC9C3806F /* Build configuration list for PBXNativeTarget "Pods-PatientManagement" */;
+			buildConfigurationList = 457FB0E1D43188B6B608EC3BC00771CB /* Build configuration list for PBXNativeTarget "Pods-PatientManagement" */;
 			buildPhases = (
-				113635BF260F5B1A174621CBA34EB15C /* Sources */,
-				BA2767772D8487B9CC65499472C60FB6 /* Frameworks */,
-				84411071C0B1F98039F94E4DCFA94946 /* Headers */,
+				DF54B78F4A551DE856D358E24A126BE4 /* Sources */,
+				FD951BD607EDB5150719C97E3FE47345 /* Frameworks */,
+				0F174A0C57509716A2747B248F047F2D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1CAB65604CA7B97326944996F3A7BA6E /* PBXTargetDependency */,
+				F2C845054489190B2C2D83FE6746198B /* PBXTargetDependency */,
 			);
 			name = "Pods-PatientManagement";
 			productName = "Pods-PatientManagement";
-			productReference = 02C070CBD609167AEC836F9712450E5C /* Pods_PatientManagement.framework */;
+			productReference = D44AF262824EBC1E69153F2A1B46FB01 /* Pods_PatientManagement.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -269,88 +246,80 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 8D8FD1E4DCE90C697EBDF7D3DE516331 /* Products */;
+			productRefGroup = 5863083E8FBE0041CC3980931AD292E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7814BB29C43881C657824C85B7870715 /* ADMozaicCollectionViewLayout */,
-				9BF0EEB06B9DC366E6D81C439918CAF0 /* Pods-PatientManagement */,
+				83DBBCE523C3F780DFE1B689B272DDE8 /* CHTCollectionViewWaterfallLayout */,
+				E01FABADF67884FC72C07480FB88A6C5 /* Pods-PatientManagement */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		072A75094DB1A65593BD5CD8549BB486 /* Sources */ = {
+		586A662234293D7F6DA248DF5EB34FE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D8EDFAF1605931B0B20017B718E006 /* ADMozaicCollectionViewLayout-dummy.m in Sources */,
-				B3985E1601B83B18E354031CA6A29A3A /* ADMozaikLayout.swift in Sources */,
-				BAF079D6E74741F61933CCF57C0D8ADD /* ADMozaikLayoutAttributes.swift in Sources */,
-				55E2D04F32F10C4A6612549EC9F36DA8 /* ADMozaikLayoutCache.swift in Sources */,
-				B1F79A7AB3539B8EBC9137873977C529 /* ADMozaikLayoutDelegate.swift in Sources */,
-				FD44701E90E3CA4BBE6536F5E7EDB040 /* ADMozaikLayoutSectionGeometry.swift in Sources */,
-				FC5A9DD228CA8B6430B3C22758F551D6 /* ADMozaikLayoutSectionMatrix.swift in Sources */,
-				E5369749BCC13E447BD94F3E1EFFC567 /* ADMozaikLayoutStructs.swift in Sources */,
-				105BD9FC3BD7A7FC1A86EBEF4468CB25 /* AutoEquatable.generated.swift in Sources */,
-				49E9A45821B6DA7CA46EE38DEC935199 /* AutoHashable.generated.swift in Sources */,
-				F8DB51FF8D553F3AD28098757AC2EA2A /* PhantomProtocols.swift in Sources */,
+				CD5E4D782A8BED6744F29F6D5A6C2651 /* CHTCollectionViewWaterfallLayout-dummy.m in Sources */,
+				7D4258A7B8DE5B14B7B4B91D6B955029 /* CHTCollectionViewWaterfallLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		113635BF260F5B1A174621CBA34EB15C /* Sources */ = {
+		DF54B78F4A551DE856D358E24A126BE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50452E0BF6F6C7E0D376EBC081666DAD /* Pods-PatientManagement-dummy.m in Sources */,
+				2C6254A2AF41411A5E6ED6C7AADCC1FA /* Pods-PatientManagement-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1CAB65604CA7B97326944996F3A7BA6E /* PBXTargetDependency */ = {
+		F2C845054489190B2C2D83FE6746198B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ADMozaicCollectionViewLayout;
-			target = 7814BB29C43881C657824C85B7870715 /* ADMozaicCollectionViewLayout */;
-			targetProxy = A324B48D2EA8A340BD82FEE12312FB48 /* PBXContainerItemProxy */;
+			name = CHTCollectionViewWaterfallLayout;
+			target = 83DBBCE523C3F780DFE1B689B272DDE8 /* CHTCollectionViewWaterfallLayout */;
+			targetProxy = A893885B44635549D90A22D72DDF7E70 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		53E03A531821A24573619EADFC4D6986 /* Release */ = {
+		1CD9F9A6432852C3F67E18ACC05EEBDC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA8905E8F3CA32B34872BC2BB171F149 /* ADMozaicCollectionViewLayout.xcconfig */;
+			baseConfigurationReference = D17EE5BB82CB3A9D4141DA015BFA103D /* CHTCollectionViewWaterfallLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ADMozaicCollectionViewLayout/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ADMozaicCollectionViewLayout;
+				MODULEMAP_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CHTCollectionViewWaterfallLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		643C76AA582046977B7877822ED7A258 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -400,7 +369,79 @@
 			};
 			name = Debug;
 		};
-		B1FE185C299CD0B57E2B1040C46C2882 /* Debug */ = {
+		667CD10F94992A227813B9B120EB1E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47446FA5C179E69B6396F408753DF61A /* Pods-PatientManagement.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PatientManagement/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PatientManagement/Pods-PatientManagement.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PatientManagement;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CC134B67098A9BE1B3B7F4C4A3CB841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17EE5BB82CB3A9D4141DA015BFA103D /* CHTCollectionViewWaterfallLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CHTCollectionViewWaterfallLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E9DC8430AD2E9333F266EAF00ADA6B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A84C1766775582C3D720195A18603281 /* Pods-PatientManagement.debug.xcconfig */;
 			buildSettings = {
@@ -483,79 +524,6 @@
 			};
 			name = Release;
 		};
-		CBCCD0FFE1B7A8B8E3B018C9C0E31001 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47446FA5C179E69B6396F408753DF61A /* Pods-PatientManagement.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PatientManagement/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PatientManagement/Pods-PatientManagement.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PatientManagement;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E8381B4577E7B56D60EF07CB103976FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA8905E8F3CA32B34872BC2BB171F149 /* ADMozaicCollectionViewLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ADMozaicCollectionViewLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ADMozaicCollectionViewLayout/ADMozaicCollectionViewLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ADMozaicCollectionViewLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,20 +536,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65EBD39BD6576D7D99D30C7FC9C3806F /* Build configuration list for PBXNativeTarget "Pods-PatientManagement" */ = {
+		457FB0E1D43188B6B608EC3BC00771CB /* Build configuration list for PBXNativeTarget "Pods-PatientManagement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B1FE185C299CD0B57E2B1040C46C2882 /* Debug */,
-				CBCCD0FFE1B7A8B8E3B018C9C0E31001 /* Release */,
+				9E9DC8430AD2E9333F266EAF00ADA6B5 /* Debug */,
+				667CD10F94992A227813B9B120EB1E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0A957E2290E4DCF212FFC1CF0A46923 /* Build configuration list for PBXNativeTarget "ADMozaicCollectionViewLayout" */ = {
+		7151B549D788AB03287452A1205A14CD /* Build configuration list for PBXNativeTarget "CHTCollectionViewWaterfallLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E8381B4577E7B56D60EF07CB103976FC /* Debug */,
-				53E03A531821A24573619EADFC4D6986 /* Release */,
+				1CD9F9A6432852C3F67E18ACC05EEBDC /* Debug */,
+				9CC134B67098A9BE1B3B7F4C4A3CB841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

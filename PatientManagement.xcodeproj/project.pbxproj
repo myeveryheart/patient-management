@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7D9FB6D31F492CC6009B7E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FB6D21F492CC6009B7E20 /* AppDelegate.swift */; };
-		7D9FB6D51F492CC6009B7E20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FB6D41F492CC6009B7E20 /* ViewController.swift */; };
 		7D9FB6D81F492CC6009B7E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9FB6D61F492CC6009B7E20 /* Main.storyboard */; };
 		7D9FB6DA1F492CC6009B7E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D9FB6D91F492CC6009B7E20 /* Assets.xcassets */; };
 		7D9FB6DD1F492CC6009B7E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9FB6DB1F492CC6009B7E20 /* LaunchScreen.storyboard */; };
+		7D9FB6E81F4935D7009B7E20 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FB6E71F4935D7009B7E20 /* ImageCollectionViewController.swift */; };
+		7D9FB6EA1F496FBD009B7E20 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FB6E91F496FBD009B7E20 /* FileHelper.swift */; };
+		7D9FB6EC1F497688009B7E20 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FB6EB1F497688009B7E20 /* PhotoHelper.swift */; };
 		D4EF874FBE606C9FFDD2C41A /* Pods_PatientManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D072017E52FC9C6E97FEF0 /* Pods_PatientManagement.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +22,13 @@
 		653626C92599A04888F3EB25 /* Pods-PatientManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientManagement.release.xcconfig"; path = "Pods/Target Support Files/Pods-PatientManagement/Pods-PatientManagement.release.xcconfig"; sourceTree = "<group>"; };
 		7D9FB6CF1F492CC6009B7E20 /* PatientManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D9FB6D21F492CC6009B7E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D9FB6D41F492CC6009B7E20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D9FB6D71F492CC6009B7E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D9FB6D91F492CC6009B7E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D9FB6DC1F492CC6009B7E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D9FB6DE1F492CC6009B7E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D9FB6E71F4935D7009B7E20 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		7D9FB6E91F496FBD009B7E20 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		7D9FB6EB1F497688009B7E20 /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
 		E5D072017E52FC9C6E97FEF0 /* Pods_PatientManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,8 +75,10 @@
 			isa = PBXGroup;
 			children = (
 				7D9FB6D21F492CC6009B7E20 /* AppDelegate.swift */,
-				7D9FB6D41F492CC6009B7E20 /* ViewController.swift */,
 				7D9FB6D61F492CC6009B7E20 /* Main.storyboard */,
+				7D9FB6E71F4935D7009B7E20 /* ImageCollectionViewController.swift */,
+				7D9FB6E91F496FBD009B7E20 /* FileHelper.swift */,
+				7D9FB6EB1F497688009B7E20 /* PhotoHelper.swift */,
 				7D9FB6D91F492CC6009B7E20 /* Assets.xcassets */,
 				7D9FB6DB1F492CC6009B7E20 /* LaunchScreen.storyboard */,
 				7D9FB6DE1F492CC6009B7E20 /* Info.plist */,
@@ -211,8 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D9FB6D51F492CC6009B7E20 /* ViewController.swift in Sources */,
+				7D9FB6E81F4935D7009B7E20 /* ImageCollectionViewController.swift in Sources */,
 				7D9FB6D31F492CC6009B7E20 /* AppDelegate.swift in Sources */,
+				7D9FB6EC1F497688009B7E20 /* PhotoHelper.swift in Sources */,
+				7D9FB6EA1F496FBD009B7E20 /* FileHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +386,7 @@
 				7D9FB6E31F492CC6009B7E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

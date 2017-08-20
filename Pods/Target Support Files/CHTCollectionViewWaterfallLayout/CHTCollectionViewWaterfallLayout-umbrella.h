@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double ADMozaicCollectionViewLayoutVersionNumber;
-FOUNDATION_EXPORT const unsigned char ADMozaicCollectionViewLayoutVersionString[];
+FOUNDATION_EXPORT double CHTCollectionViewWaterfallLayoutVersionNumber;
+FOUNDATION_EXPORT const unsigned char CHTCollectionViewWaterfallLayoutVersionString[];
 

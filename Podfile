@@ -4,6 +4,6 @@ use_frameworks!
 
 target 'PatientManagement' do
 
-pod 'ADMozaicCollectionViewLayout'
+pod 'CHTCollectionViewWaterfallLayout/Swift'
 
 end

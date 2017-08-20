@@ -1,12 +1,12 @@
 PODS:
-  - ADMozaicCollectionViewLayout (4.0.2)
+  - CHTCollectionViewWaterfallLayout/Swift (0.9.6)
 
 DEPENDENCIES:
-  - ADMozaicCollectionViewLayout
+  - CHTCollectionViewWaterfallLayout/Swift
 
 SPEC CHECKSUMS:
-  ADMozaicCollectionViewLayout: b5ca73c8ea80a29a5973f2ab50d372dd0b46acf7
+  CHTCollectionViewWaterfallLayout: f4dab06db57b36dcf29e802594175acc76c56615
 
-PODFILE CHECKSUM: d3d00a7a5254f5d5ea302d00bffab4700902c32c
+PODFILE CHECKSUM: 7cf6cfe86ecd157eeeb2634398f58788f0a2c7fe
 
 COCOAPODS: 1.2.1
