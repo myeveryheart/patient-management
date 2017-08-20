@@ -1,0 +1,12 @@
+PODS:
+  - ADMozaicCollectionViewLayout (4.0.2)
+
+DEPENDENCIES:
+  - ADMozaicCollectionViewLayout
+
+SPEC CHECKSUMS:
+  ADMozaicCollectionViewLayout: b5ca73c8ea80a29a5973f2ab50d372dd0b46acf7
+
+PODFILE CHECKSUM: d3d00a7a5254f5d5ea302d00bffab4700902c32c
+
+COCOAPODS: 1.2.1

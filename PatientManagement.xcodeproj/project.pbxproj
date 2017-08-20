@@ -12,9 +12,12 @@
 		7D9FB6D81F492CC6009B7E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9FB6D61F492CC6009B7E20 /* Main.storyboard */; };
 		7D9FB6DA1F492CC6009B7E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D9FB6D91F492CC6009B7E20 /* Assets.xcassets */; };
 		7D9FB6DD1F492CC6009B7E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9FB6DB1F492CC6009B7E20 /* LaunchScreen.storyboard */; };
+		D4EF874FBE606C9FFDD2C41A /* Pods_PatientManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D072017E52FC9C6E97FEF0 /* Pods_PatientManagement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4845EE46F4553FECD915A7A6 /* Pods-PatientManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientManagement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PatientManagement/Pods-PatientManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		653626C92599A04888F3EB25 /* Pods-PatientManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientManagement.release.xcconfig"; path = "Pods/Target Support Files/Pods-PatientManagement/Pods-PatientManagement.release.xcconfig"; sourceTree = "<group>"; };
 		7D9FB6CF1F492CC6009B7E20 /* PatientManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D9FB6D21F492CC6009B7E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D9FB6D41F492CC6009B7E20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		7D9FB6D91F492CC6009B7E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D9FB6DC1F492CC6009B7E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D9FB6DE1F492CC6009B7E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D072017E52FC9C6E97FEF0 /* Pods_PatientManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4EF874FBE606C9FFDD2C41A /* Pods_PatientManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		492EC81F4082C2E7F06807B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4845EE46F4553FECD915A7A6 /* Pods-PatientManagement.debug.xcconfig */,
+				653626C92599A04888F3EB25 /* Pods-PatientManagement.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7D9FB6C61F492CC6009B7E20 = {
 			isa = PBXGroup;
 			children = (
 				7D9FB6D11F492CC6009B7E20 /* PatientManagement */,
 				7D9FB6D01F492CC6009B7E20 /* Products */,
+				492EC81F4082C2E7F06807B7 /* Pods */,
+				FC570C5F250740E98A1B0F12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = PatientManagement;
 			sourceTree = "<group>";
 		};
+		FC570C5F250740E98A1B0F12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5D072017E52FC9C6E97FEF0 /* Pods_PatientManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D9FB6E11F492CC6009B7E20 /* Build configuration list for PBXNativeTarget "PatientManagement" */;
 			buildPhases = (
+				1B93FABE9ECEB9810E3C9518 /* [CP] Check Pods Manifest.lock */,
 				7D9FB6CB1F492CC6009B7E20 /* Sources */,
 				7D9FB6CC1F492CC6009B7E20 /* Frameworks */,
 				7D9FB6CD1F492CC6009B7E20 /* Resources */,
+				71063ADAA9D33D6FE7D94E66 /* [CP] Embed Pods Frameworks */,
+				597528DD7A8CF42577AE0135 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B93FABE9ECEB9810E3C9518 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		597528DD7A8CF42577AE0135 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PatientManagement/Pods-PatientManagement-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71063ADAA9D33D6FE7D94E66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PatientManagement/Pods-PatientManagement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D9FB6CB1F492CC6009B7E20 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		7D9FB6E21F492CC6009B7E20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4845EE46F4553FECD915A7A6 /* Pods-PatientManagement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PatientManagement/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		7D9FB6E31F492CC6009B7E20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 653626C92599A04888F3EB25 /* Pods-PatientManagement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PatientManagement/Info.plist;
