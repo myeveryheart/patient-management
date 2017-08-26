@@ -8,11 +8,25 @@
 
 import Foundation
 import UIKit
+import Permission
 
 class PhotoHelper {
     
     //打开相册
-    static func openAlbum(controller: UIViewController){
+    static func openAlbum(controller: UIViewController) {
+        let permission: Permission = .photos
+        
+        permission.request { status in
+            switch status {
+            case .authorized:    album(controller: controller)
+            case .denied:        print("denied")
+            case .disabled:      print("disabled")
+            case .notDetermined: print("not determined")
+            }
+        }
+    }
+    
+    static func album(controller: UIViewController) {
         //判断设置是否支持图片库
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
             //初始化图片控制器
@@ -28,10 +42,24 @@ class PhotoHelper {
         }else{
             debugPrint("读取相册错误")
         }
+
     }
     
     //打开相机
-    static func openCamera(controller: UIViewController){
+    static func openCamera(controller: UIViewController) {
+        let permission: Permission = .camera
+        
+        permission.request { status in
+            switch status {
+            case .authorized:    camera(controller: controller)
+            case .denied:        print("denied")
+            case .disabled:      print("disabled")
+            case .notDetermined: print("not determined")
+            }
+        }
+    }
+    
+    static func camera(controller: UIViewController) {
         if UIImagePickerController.isSourceTypeAvailable(.camera){
             //创建图片控制器
             let picker = UIImagePickerController()
@@ -40,7 +68,7 @@ class PhotoHelper {
             //设置来源
             picker.sourceType = .camera
             //允许编辑
-//            picker.allowsEditing = true
+            //            picker.allowsEditing = true
             //打开相机
             controller.present(picker, animated: true, completion: nil)
         }else{

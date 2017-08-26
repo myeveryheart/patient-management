@@ -7,47 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C6254A2AF41411A5E6ED6C7AADCC1FA /* Pods-PatientManagement-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D6ECA7970D2FF3220D2DA6BCFFA20E /* Pods-PatientManagement-dummy.m */; };
-		5D96D498C71CD9B88C0D42BD6D93E294 /* CHTCollectionViewWaterfallLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBE717C498C1F200026076C151F82EB0 /* CHTCollectionViewWaterfallLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6227A88C6A84983DB4A2EF5A6A9042C6 /* Pods-PatientManagement-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1583177686C0BFDBEFCE9DA807432F71 /* Pods-PatientManagement-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72A15E0767D866990AABAD13ABFED4D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7D4258A7B8DE5B14B7B4B91D6B955029 /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14896A6D5F9DFB449906C925D3FC5AB /* CHTCollectionViewWaterfallLayout.swift */; };
+		069CE430BEB33DF6DEFEA5F006D8FD50 /* PermissionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B741E7F49854A81C2B011ED2FE200A /* PermissionSet.swift */; };
+		159D16B276AEF7FA13849705FD16CE65 /* MediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D855730BAA2CA256C25C91667F27E7 /* MediaLibrary.swift */; };
+		1BEF514CFBE78E65F696EF721D37418A /* LocationWhenInUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D803C5CFBBEEECD800A3E331D2976C09 /* LocationWhenInUse.swift */; };
+		20A8987D0AD8861529928AB1F0FB7E0C /* Pods-PatientManagement-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D6ECA7970D2FF3220D2DA6BCFFA20E /* Pods-PatientManagement-dummy.m */; };
+		55F55F6CEAB8709BF7C373011CD85716 /* Microphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9225DEF1D5AE022401B0EC437A167164 /* Microphone.swift */; };
+		5D96D498C71CD9B88C0D42BD6D93E294 /* CHTCollectionViewWaterfallLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF3A19A38D3A06D64D23CF5747246A8C /* CHTCollectionViewWaterfallLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60AD808C2D5D63DCA3BA15A5138577C8 /* Pods-PatientManagement-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1583177686C0BFDBEFCE9DA807432F71 /* Pods-PatientManagement-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6323DF1D0A8CF1B81ABFD1D3F99C9A27 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20790008B3620546E72E32FAD5553A0 /* Notifications.swift */; };
+		64E3C302323B719BC189107D856327B0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70D2C4F07F3DC9C1BCCD036B69C76DD /* Utilities.swift */; };
+		6EE2F9B3671859708857C0F9B1BAD9CF /* PermissionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498376C783FFCEC58EAC9E4759B1716 /* PermissionButton.swift */; };
+		7199E2CEF0D83F2C6030C2DFD28024CC /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09167A61FC0899E8B1A6FF9FE39D1AD /* Motion.swift */; };
+		7D4258A7B8DE5B14B7B4B91D6B955029 /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5323C311E47575F92E51C6B3250BF6F /* CHTCollectionViewWaterfallLayout.swift */; };
+		7F4F7ECD3F66A0604607F184DA9AD3FD /* PermissionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1442B44219791C72EB4BAF62B563F7 /* PermissionType.swift */; };
+		884F86E255BF415456F43BEE68510443 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4967B34206B6AA315B58D97665B517 /* Location.swift */; };
+		8B0D49A019B1FCF4E9581449FB25B151 /* Permission-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4F43EEA0D7F722B2FAF5489F601F65 /* Permission-dummy.m */; };
+		8D6BE7ED21D4E88A266ED7A2D78C9DB9 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32FB0F10AEBE33C99C5FDC53CF9E9D0 /* Contacts.swift */; };
+		8E7A60149AE229655A9EBC760E6D75F8 /* PermissionAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273AE8F545F512DFA42F4A6D00BD04AE /* PermissionAlert.swift */; };
+		8FEFF46A28A1FFD24ECE70CB67383236 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0843C8B56600158A1E1A96669C17262 /* Photos.swift */; };
+		A214ADC69A0120F5039D8F365C46B459 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D22D0AD607525F0AD95E8A891FA7578 /* Camera.swift */; };
 		AABDBDD3A0BE5293C0F71603289EDD02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CD5E4D782A8BED6744F29F6D5A6C2651 /* CHTCollectionViewWaterfallLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8FE841D92F5C387D821A14F507B862 /* CHTCollectionViewWaterfallLayout-dummy.m */; };
+		B417A77ECBD15C495E5F4C9134E8C516 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF1CE85177C55F85D5B29873B1ADF8F /* SpeechRecognizer.swift */; };
+		B66823D97F55F21DDC9C2C929B192BD7 /* LocationAlways.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA791F45D2F1E5A49342769CB490266 /* LocationAlways.swift */; };
+		B90D0CD8BEE3C134949BE685364DBC67 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79ABDB40E61A872864FD01DC9930E77 /* Reminders.swift */; };
+		BD2472A04FDD8733E295A0BF9C8FAAFC /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F897560D0E46AF831B1405678F644EEE /* Bluetooth.swift */; };
+		BD630F36BE9AF991F9A10E7F4225BCB7 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C831595F48CFB0D4FAE0742D43E571 /* Permission.swift */; };
+		C34B9517B5A3B31107894CD3EFB7100C /* Permission-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E744AFE38C2750B0CDA169FD33B8DAF7 /* Permission-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5E4D782A8BED6744F29F6D5A6C2651 /* CHTCollectionViewWaterfallLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7228134CAD4A88974EBEF0890FAED86 /* CHTCollectionViewWaterfallLayout-dummy.m */; };
+		CEF017CE76EC41893541F08CE58BE3F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CFEB4ECDC4A506F8BF150AFDB6CFB70F /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F15626592B3ED662537DB47C7251AB /* Events.swift */; };
+		E94CEC255DEA4EC91305138A034D11C0 /* Siri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CEA956C37C0C96AF6077E5ACF6A56 /* Siri.swift */; };
+		ED535C7B1AA20108EB8DCE156FD66E95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		FD9B58D97C746C155C69886F5037A21B /* AddressBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E273D7046C72ACBF5BB8197A229590E /* AddressBook.swift */; };
+		FE45EDAC1B694AAD6F1F18B04786635C /* PermissionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6764153A012CB846FEA0BCC771AD48 /* PermissionStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A893885B44635549D90A22D72DDF7E70 /* PBXContainerItemProxy */ = {
+		4BC852484C864479D0A41AC1A8A33B88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 83DBBCE523C3F780DFE1B689B272DDE8;
 			remoteInfo = CHTCollectionViewWaterfallLayout;
 		};
+		A7BEE23D04C3FA6F23F05FC1A944A840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87C4C770F4A139FAC01AA6C06F5F7383;
+			remoteInfo = Permission;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0498376C783FFCEC58EAC9E4759B1716 /* PermissionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionButton.swift; path = Source/PermissionButton.swift; sourceTree = "<group>"; };
+		0CE85BE0D9AF910A19EFAD126D85C959 /* Permission-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Permission-prefix.pch"; sourceTree = "<group>"; };
+		1478069567F80C00AC7D5E6F511B1F8C /* Permission.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Permission.modulemap; sourceTree = "<group>"; };
 		1583177686C0BFDBEFCE9DA807432F71 /* Pods-PatientManagement-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PatientManagement-umbrella.h"; sourceTree = "<group>"; };
-		25C87EF5109DE867A472780744A863D5 /* CHTCollectionViewWaterfallLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CHTCollectionViewWaterfallLayout.framework; path = CHTCollectionViewWaterfallLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B6681522057725E3EB92104C85576B2 /* CHTCollectionViewWaterfallLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CHTCollectionViewWaterfallLayout.modulemap; sourceTree = "<group>"; };
+		1C1442B44219791C72EB4BAF62B563F7 /* PermissionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionType.swift; path = Source/PermissionType.swift; sourceTree = "<group>"; };
+		1D22D0AD607525F0AD95E8A891FA7578 /* Camera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Camera.swift; path = Source/PermissionTypes/Camera.swift; sourceTree = "<group>"; };
+		273AE8F545F512DFA42F4A6D00BD04AE /* PermissionAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionAlert.swift; path = Source/PermissionAlert.swift; sourceTree = "<group>"; };
+		3B4F43EEA0D7F722B2FAF5489F601F65 /* Permission-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Permission-dummy.m"; sourceTree = "<group>"; };
+		44244CF58BB180286E1333B4B9406868 /* Permission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Permission.framework; path = Permission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47446FA5C179E69B6396F408753DF61A /* Pods-PatientManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatientManagement.release.xcconfig"; sourceTree = "<group>"; };
+		4AA791F45D2F1E5A49342769CB490266 /* LocationAlways.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationAlways.swift; path = Source/PermissionTypes/LocationAlways.swift; sourceTree = "<group>"; };
+		4BF13324CE7C851876971DBD1482DCD0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B741E7F49854A81C2B011ED2FE200A /* PermissionSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionSet.swift; path = Source/PermissionSet.swift; sourceTree = "<group>"; };
+		5685D9475E804144BF3A6CBDE5EF9B32 /* Permission.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Permission.xcconfig; sourceTree = "<group>"; };
 		5FC580AD0C572381B0D22550A37D305A /* Pods-PatientManagement-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PatientManagement-resources.sh"; sourceTree = "<group>"; };
+		64F15626592B3ED662537DB47C7251AB /* Events.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Events.swift; path = Source/PermissionTypes/Events.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6C5723DAB01F56AA71FE44D77D6AA9C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FBEDF3665621EEF77DDDB3EA13DC246 /* CHTCollectionViewWaterfallLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHTCollectionViewWaterfallLayout-prefix.pch"; sourceTree = "<group>"; };
+		6C5CEA956C37C0C96AF6077E5ACF6A56 /* Siri.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Siri.swift; path = Source/PermissionTypes/Siri.swift; sourceTree = "<group>"; };
 		71359FAA070413614BB76A9AA74E5FFB /* Pods-PatientManagement-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PatientManagement-frameworks.sh"; sourceTree = "<group>"; };
+		72DAC0A875F93A56A3129B866447E4B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81D6ECA7970D2FF3220D2DA6BCFFA20E /* Pods-PatientManagement-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PatientManagement-dummy.m"; sourceTree = "<group>"; };
+		82574310C8C27AB1D98F46682059C79A /* CHTCollectionViewWaterfallLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHTCollectionViewWaterfallLayout-prefix.pch"; sourceTree = "<group>"; };
 		86BF4F9FFE80B238AAAAF6AFCDF0BF6D /* Pods-PatientManagement-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PatientManagement-acknowledgements.markdown"; sourceTree = "<group>"; };
+		88E999DF49251F747895128AFEFE5B17 /* CHTCollectionViewWaterfallLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CHTCollectionViewWaterfallLayout.framework; path = CHTCollectionViewWaterfallLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6764153A012CB846FEA0BCC771AD48 /* PermissionStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionStatus.swift; path = Source/PermissionStatus.swift; sourceTree = "<group>"; };
+		8E273D7046C72ACBF5BB8197A229590E /* AddressBook.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AddressBook.swift; path = Source/PermissionTypes/AddressBook.swift; sourceTree = "<group>"; };
+		9225DEF1D5AE022401B0EC437A167164 /* Microphone.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Microphone.swift; path = Source/PermissionTypes/Microphone.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0843C8B56600158A1E1A96669C17262 /* Photos.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Photos.swift; path = Source/PermissionTypes/Photos.swift; sourceTree = "<group>"; };
+		A09167A61FC0899E8B1A6FF9FE39D1AD /* Motion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Motion.swift; path = Source/PermissionTypes/Motion.swift; sourceTree = "<group>"; };
+		A7228134CAD4A88974EBEF0890FAED86 /* CHTCollectionViewWaterfallLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHTCollectionViewWaterfallLayout-dummy.m"; sourceTree = "<group>"; };
 		A84C1766775582C3D720195A18603281 /* Pods-PatientManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatientManagement.debug.xcconfig"; sourceTree = "<group>"; };
-		AB8FE841D92F5C387D821A14F507B862 /* CHTCollectionViewWaterfallLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHTCollectionViewWaterfallLayout-dummy.m"; sourceTree = "<group>"; };
 		B2F7F791C231876660806546DEDC8D71 /* Pods-PatientManagement.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PatientManagement.modulemap"; sourceTree = "<group>"; };
-		C14896A6D5F9DFB449906C925D3FC5AB /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
-		CBE717C498C1F200026076C151F82EB0 /* CHTCollectionViewWaterfallLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHTCollectionViewWaterfallLayout-umbrella.h"; sourceTree = "<group>"; };
-		D17EE5BB82CB3A9D4141DA015BFA103D /* CHTCollectionViewWaterfallLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHTCollectionViewWaterfallLayout.xcconfig; sourceTree = "<group>"; };
-		D44AF262824EBC1E69153F2A1B46FB01 /* Pods_PatientManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PatientManagement.framework; path = "Pods-PatientManagement.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32FB0F10AEBE33C99C5FDC53CF9E9D0 /* Contacts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contacts.swift; path = Source/PermissionTypes/Contacts.swift; sourceTree = "<group>"; };
+		C3CFB2AD8125DB01F75F2CE7270D1423 /* CHTCollectionViewWaterfallLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CHTCollectionViewWaterfallLayout.modulemap; sourceTree = "<group>"; };
+		C5323C311E47575F92E51C6B3250BF6F /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
+		D70D2C4F07F3DC9C1BCCD036B69C76DD /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Source/Supporting Files/Utilities.swift"; sourceTree = "<group>"; };
+		D79ABDB40E61A872864FD01DC9930E77 /* Reminders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reminders.swift; path = Source/PermissionTypes/Reminders.swift; sourceTree = "<group>"; };
+		D803C5CFBBEEECD800A3E331D2976C09 /* LocationWhenInUse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationWhenInUse.swift; path = Source/PermissionTypes/LocationWhenInUse.swift; sourceTree = "<group>"; };
+		D8D29B2F2179B696222F03A15410E4A3 /* CHTCollectionViewWaterfallLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHTCollectionViewWaterfallLayout.xcconfig; sourceTree = "<group>"; };
+		E20790008B3620546E72E32FAD5553A0 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/PermissionTypes/Notifications.swift; sourceTree = "<group>"; };
+		E744AFE38C2750B0CDA169FD33B8DAF7 /* Permission-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Permission-umbrella.h"; sourceTree = "<group>"; };
+		EDF1CE85177C55F85D5B29873B1ADF8F /* SpeechRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognizer.swift; path = Source/PermissionTypes/SpeechRecognizer.swift; sourceTree = "<group>"; };
 		F04679AEEFEB3BD5B22CD26F0F85B139 /* Pods-PatientManagement-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PatientManagement-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2C831595F48CFB0D4FAE0742D43E571 /* Permission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Permission.swift; path = Source/Permission.swift; sourceTree = "<group>"; };
+		F4D855730BAA2CA256C25C91667F27E7 /* MediaLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaLibrary.swift; path = Source/PermissionTypes/MediaLibrary.swift; sourceTree = "<group>"; };
+		F897560D0E46AF831B1405678F644EEE /* Bluetooth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bluetooth.swift; path = Source/PermissionTypes/Bluetooth.swift; sourceTree = "<group>"; };
 		FBE7F24C4525FFBECC25B3D49C7BAE67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4967B34206B6AA315B58D97665B517 /* Location.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Source/PermissionTypes/Location.swift; sourceTree = "<group>"; };
+		FE2F839E6F437A7879485CC1B19AECAE /* Pods_PatientManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PatientManagement.framework; path = "Pods-PatientManagement.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF3A19A38D3A06D64D23CF5747246A8C /* CHTCollectionViewWaterfallLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHTCollectionViewWaterfallLayout-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,40 +122,86 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD951BD607EDB5150719C97E3FE47345 /* Frameworks */ = {
+		76528B91EBAD5079C085711C2F1D92C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A15E0767D866990AABAD13ABFED4D6 /* Foundation.framework in Frameworks */,
+				ED535C7B1AA20108EB8DCE156FD66E95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01292F8FBB3CBBCFDC6D0ED2CA6CAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF017CE76EC41893541F08CE58BE3F0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A897A2957C46EA2C8EF65D09D02F92A /* Swift */ = {
+		2153A0F2F4977DF45C9CE1225109304B /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				C14896A6D5F9DFB449906C925D3FC5AB /* CHTCollectionViewWaterfallLayout.swift */,
+				8E273D7046C72ACBF5BB8197A229590E /* AddressBook.swift */,
+				F897560D0E46AF831B1405678F644EEE /* Bluetooth.swift */,
+				1D22D0AD607525F0AD95E8A891FA7578 /* Camera.swift */,
+				C32FB0F10AEBE33C99C5FDC53CF9E9D0 /* Contacts.swift */,
+				64F15626592B3ED662537DB47C7251AB /* Events.swift */,
+				FC4967B34206B6AA315B58D97665B517 /* Location.swift */,
+				4AA791F45D2F1E5A49342769CB490266 /* LocationAlways.swift */,
+				D803C5CFBBEEECD800A3E331D2976C09 /* LocationWhenInUse.swift */,
+				F4D855730BAA2CA256C25C91667F27E7 /* MediaLibrary.swift */,
+				9225DEF1D5AE022401B0EC437A167164 /* Microphone.swift */,
+				A09167A61FC0899E8B1A6FF9FE39D1AD /* Motion.swift */,
+				E20790008B3620546E72E32FAD5553A0 /* Notifications.swift */,
+				F2C831595F48CFB0D4FAE0742D43E571 /* Permission.swift */,
+				273AE8F545F512DFA42F4A6D00BD04AE /* PermissionAlert.swift */,
+				0498376C783FFCEC58EAC9E4759B1716 /* PermissionButton.swift */,
+				51B741E7F49854A81C2B011ED2FE200A /* PermissionSet.swift */,
+				8B6764153A012CB846FEA0BCC771AD48 /* PermissionStatus.swift */,
+				1C1442B44219791C72EB4BAF62B563F7 /* PermissionType.swift */,
+				A0843C8B56600158A1E1A96669C17262 /* Photos.swift */,
+				D79ABDB40E61A872864FD01DC9930E77 /* Reminders.swift */,
+				6C5CEA956C37C0C96AF6077E5ACF6A56 /* Siri.swift */,
+				EDF1CE85177C55F85D5B29873B1ADF8F /* SpeechRecognizer.swift */,
+				D70D2C4F07F3DC9C1BCCD036B69C76DD /* Utilities.swift */,
 			);
-			name = Swift;
+			name = Core;
 			sourceTree = "<group>";
 		};
-		3B9C110BF282F6836E90F88C2E32BACA /* Pods */ = {
+		365432F3D44DDEE95A96DF47C18E8906 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9D00ADE4878233845FFB86659304207A /* CHTCollectionViewWaterfallLayout */,
+				C3CFB2AD8125DB01F75F2CE7270D1423 /* CHTCollectionViewWaterfallLayout.modulemap */,
+				D8D29B2F2179B696222F03A15410E4A3 /* CHTCollectionViewWaterfallLayout.xcconfig */,
+				A7228134CAD4A88974EBEF0890FAED86 /* CHTCollectionViewWaterfallLayout-dummy.m */,
+				82574310C8C27AB1D98F46682059C79A /* CHTCollectionViewWaterfallLayout-prefix.pch */,
+				FF3A19A38D3A06D64D23CF5747246A8C /* CHTCollectionViewWaterfallLayout-umbrella.h */,
+				4BF13324CE7C851876971DBD1482DCD0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CHTCollectionViewWaterfallLayout";
+			sourceTree = "<group>";
+		};
+		569308E803D0C81107B73BE7BE82FE3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				598E557909903C8281B39DC14667BC7D /* CHTCollectionViewWaterfallLayout */,
+				8EA9DAD3CA8ECEC30AB38CF9A05723F8 /* Permission */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		5863083E8FBE0041CC3980931AD292E3 /* Products */ = {
+		598E557909903C8281B39DC14667BC7D /* CHTCollectionViewWaterfallLayout */ = {
 			isa = PBXGroup;
 			children = (
-				25C87EF5109DE867A472780744A863D5 /* CHTCollectionViewWaterfallLayout.framework */,
-				D44AF262824EBC1E69153F2A1B46FB01 /* Pods_PatientManagement.framework */,
+				365432F3D44DDEE95A96DF47C18E8906 /* Support Files */,
+				E9E12FBF67653621548C24818C0FD5AF /* Swift */,
 			);
-			name = Products;
+			name = CHTCollectionViewWaterfallLayout;
+			path = CHTCollectionViewWaterfallLayout;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -100,34 +209,20 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3B9C110BF282F6836E90F88C2E32BACA /* Pods */,
-				5863083E8FBE0041CC3980931AD292E3 /* Products */,
+				569308E803D0C81107B73BE7BE82FE3A /* Pods */,
+				D42AD3ADE08901520FF284C65A6E988C /* Products */,
 				F47188FE7B4CA33A7AF5770ACE1AB970 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		91A96C407221489A0674D85A71E7677C /* Support Files */ = {
+		8EA9DAD3CA8ECEC30AB38CF9A05723F8 /* Permission */ = {
 			isa = PBXGroup;
 			children = (
-				2B6681522057725E3EB92104C85576B2 /* CHTCollectionViewWaterfallLayout.modulemap */,
-				D17EE5BB82CB3A9D4141DA015BFA103D /* CHTCollectionViewWaterfallLayout.xcconfig */,
-				AB8FE841D92F5C387D821A14F507B862 /* CHTCollectionViewWaterfallLayout-dummy.m */,
-				6FBEDF3665621EEF77DDDB3EA13DC246 /* CHTCollectionViewWaterfallLayout-prefix.pch */,
-				CBE717C498C1F200026076C151F82EB0 /* CHTCollectionViewWaterfallLayout-umbrella.h */,
-				6C5723DAB01F56AA71FE44D77D6AA9C3 /* Info.plist */,
+				2153A0F2F4977DF45C9CE1225109304B /* Core */,
+				F77FEC9FC073D13ADF492B5B5E1034B7 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CHTCollectionViewWaterfallLayout";
-			sourceTree = "<group>";
-		};
-		9D00ADE4878233845FFB86659304207A /* CHTCollectionViewWaterfallLayout */ = {
-			isa = PBXGroup;
-			children = (
-				91A96C407221489A0674D85A71E7677C /* Support Files */,
-				3A897A2957C46EA2C8EF65D09D02F92A /* Swift */,
-			);
-			name = CHTCollectionViewWaterfallLayout;
-			path = CHTCollectionViewWaterfallLayout;
+			name = Permission;
+			path = Permission;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -164,6 +259,24 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		D42AD3ADE08901520FF284C65A6E988C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88E999DF49251F747895128AFEFE5B17 /* CHTCollectionViewWaterfallLayout.framework */,
+				44244CF58BB180286E1333B4B9406868 /* Permission.framework */,
+				FE2F839E6F437A7879485CC1B19AECAE /* Pods_PatientManagement.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9E12FBF67653621548C24818C0FD5AF /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				C5323C311E47575F92E51C6B3250BF6F /* CHTCollectionViewWaterfallLayout.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
 		F47188FE7B4CA33A7AF5770ACE1AB970 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,22 +285,44 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F77FEC9FC073D13ADF492B5B5E1034B7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72DAC0A875F93A56A3129B866447E4B5 /* Info.plist */,
+				1478069567F80C00AC7D5E6F511B1F8C /* Permission.modulemap */,
+				5685D9475E804144BF3A6CBDE5EF9B32 /* Permission.xcconfig */,
+				3B4F43EEA0D7F722B2FAF5489F601F65 /* Permission-dummy.m */,
+				0CE85BE0D9AF910A19EFAD126D85C959 /* Permission-prefix.pch */,
+				E744AFE38C2750B0CDA169FD33B8DAF7 /* Permission-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Permission";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0F174A0C57509716A2747B248F047F2D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6227A88C6A84983DB4A2EF5A6A9042C6 /* Pods-PatientManagement-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8D491E5A3CFF71BD9C173CBBECE1076D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5D96D498C71CD9B88C0D42BD6D93E294 /* CHTCollectionViewWaterfallLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F4F9F126018C44046C0495BD735153 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AD808C2D5D63DCA3BA15A5138577C8 /* Pods-PatientManagement-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5C7D456DF7F7401DA42882474889C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C34B9517B5A3B31107894CD3EFB7100C /* Permission-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,25 +343,43 @@
 			);
 			name = CHTCollectionViewWaterfallLayout;
 			productName = CHTCollectionViewWaterfallLayout;
-			productReference = 25C87EF5109DE867A472780744A863D5 /* CHTCollectionViewWaterfallLayout.framework */;
+			productReference = 88E999DF49251F747895128AFEFE5B17 /* CHTCollectionViewWaterfallLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E01FABADF67884FC72C07480FB88A6C5 /* Pods-PatientManagement */ = {
+		87C4C770F4A139FAC01AA6C06F5F7383 /* Permission */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 457FB0E1D43188B6B608EC3BC00771CB /* Build configuration list for PBXNativeTarget "Pods-PatientManagement" */;
+			buildConfigurationList = E9C5E54A970C128F5E264281F37ECEDD /* Build configuration list for PBXNativeTarget "Permission" */;
 			buildPhases = (
-				DF54B78F4A551DE856D358E24A126BE4 /* Sources */,
-				FD951BD607EDB5150719C97E3FE47345 /* Frameworks */,
-				0F174A0C57509716A2747B248F047F2D /* Headers */,
+				30A930326B6DD83F30700AA51838BBA3 /* Sources */,
+				E01292F8FBB3CBBCFDC6D0ED2CA6CAC2 /* Frameworks */,
+				FA5C7D456DF7F7401DA42882474889C2 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F2C845054489190B2C2D83FE6746198B /* PBXTargetDependency */,
+			);
+			name = Permission;
+			productName = Permission;
+			productReference = 44244CF58BB180286E1333B4B9406868 /* Permission.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB6E07A7029AC69B3DCAB993EE78463F /* Pods-PatientManagement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C8190EEC7A5970572A234A1FBAD21B /* Build configuration list for PBXNativeTarget "Pods-PatientManagement" */;
+			buildPhases = (
+				61882C54238BAA0D126E5323C8E69C33 /* Sources */,
+				76528B91EBAD5079C085711C2F1D92C5 /* Frameworks */,
+				D9F4F9F126018C44046C0495BD735153 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38F783D7BBF3B47E3950A570E5FE05E3 /* PBXTargetDependency */,
+				AC717190F8B022E1BF8C91E8647ABA1F /* PBXTargetDependency */,
 			);
 			name = "Pods-PatientManagement";
 			productName = "Pods-PatientManagement";
-			productReference = D44AF262824EBC1E69153F2A1B46FB01 /* Pods_PatientManagement.framework */;
+			productReference = FE2F839E6F437A7879485CC1B19AECAE /* Pods_PatientManagement.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -246,17 +399,49 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5863083E8FBE0041CC3980931AD292E3 /* Products */;
+			productRefGroup = D42AD3ADE08901520FF284C65A6E988C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				83DBBCE523C3F780DFE1B689B272DDE8 /* CHTCollectionViewWaterfallLayout */,
-				E01FABADF67884FC72C07480FB88A6C5 /* Pods-PatientManagement */,
+				87C4C770F4A139FAC01AA6C06F5F7383 /* Permission */,
+				FB6E07A7029AC69B3DCAB993EE78463F /* Pods-PatientManagement */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		30A930326B6DD83F30700AA51838BBA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9B58D97C746C155C69886F5037A21B /* AddressBook.swift in Sources */,
+				BD2472A04FDD8733E295A0BF9C8FAAFC /* Bluetooth.swift in Sources */,
+				A214ADC69A0120F5039D8F365C46B459 /* Camera.swift in Sources */,
+				8D6BE7ED21D4E88A266ED7A2D78C9DB9 /* Contacts.swift in Sources */,
+				CFEB4ECDC4A506F8BF150AFDB6CFB70F /* Events.swift in Sources */,
+				884F86E255BF415456F43BEE68510443 /* Location.swift in Sources */,
+				B66823D97F55F21DDC9C2C929B192BD7 /* LocationAlways.swift in Sources */,
+				1BEF514CFBE78E65F696EF721D37418A /* LocationWhenInUse.swift in Sources */,
+				159D16B276AEF7FA13849705FD16CE65 /* MediaLibrary.swift in Sources */,
+				55F55F6CEAB8709BF7C373011CD85716 /* Microphone.swift in Sources */,
+				7199E2CEF0D83F2C6030C2DFD28024CC /* Motion.swift in Sources */,
+				6323DF1D0A8CF1B81ABFD1D3F99C9A27 /* Notifications.swift in Sources */,
+				8B0D49A019B1FCF4E9581449FB25B151 /* Permission-dummy.m in Sources */,
+				BD630F36BE9AF991F9A10E7F4225BCB7 /* Permission.swift in Sources */,
+				8E7A60149AE229655A9EBC760E6D75F8 /* PermissionAlert.swift in Sources */,
+				6EE2F9B3671859708857C0F9B1BAD9CF /* PermissionButton.swift in Sources */,
+				069CE430BEB33DF6DEFEA5F006D8FD50 /* PermissionSet.swift in Sources */,
+				FE45EDAC1B694AAD6F1F18B04786635C /* PermissionStatus.swift in Sources */,
+				7F4F7ECD3F66A0604607F184DA9AD3FD /* PermissionType.swift in Sources */,
+				8FEFF46A28A1FFD24ECE70CB67383236 /* Photos.swift in Sources */,
+				B90D0CD8BEE3C134949BE685364DBC67 /* Reminders.swift in Sources */,
+				E94CEC255DEA4EC91305138A034D11C0 /* Siri.swift in Sources */,
+				B417A77ECBD15C495E5F4C9134E8C516 /* SpeechRecognizer.swift in Sources */,
+				64E3C302323B719BC189107D856327B0 /* Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		586A662234293D7F6DA248DF5EB34FE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,29 +451,105 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF54B78F4A551DE856D358E24A126BE4 /* Sources */ = {
+		61882C54238BAA0D126E5323C8E69C33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6254A2AF41411A5E6ED6C7AADCC1FA /* Pods-PatientManagement-dummy.m in Sources */,
+				20A8987D0AD8861529928AB1F0FB7E0C /* Pods-PatientManagement-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F2C845054489190B2C2D83FE6746198B /* PBXTargetDependency */ = {
+		38F783D7BBF3B47E3950A570E5FE05E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CHTCollectionViewWaterfallLayout;
 			target = 83DBBCE523C3F780DFE1B689B272DDE8 /* CHTCollectionViewWaterfallLayout */;
-			targetProxy = A893885B44635549D90A22D72DDF7E70 /* PBXContainerItemProxy */;
+			targetProxy = 4BC852484C864479D0A41AC1A8A33B88 /* PBXContainerItemProxy */;
+		};
+		AC717190F8B022E1BF8C91E8647ABA1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Permission;
+			target = 87C4C770F4A139FAC01AA6C06F5F7383 /* Permission */;
+			targetProxy = A7BEE23D04C3FA6F23F05FC1A944A840 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1CD9F9A6432852C3F67E18ACC05EEBDC /* Debug */ = {
+		15122008E1D554574630F692722AC13C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D17EE5BB82CB3A9D4141DA015BFA103D /* CHTCollectionViewWaterfallLayout.xcconfig */;
+			baseConfigurationReference = 5685D9475E804144BF3A6CBDE5EF9B32 /* Permission.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Permission/Permission-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Permission/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Permission/Permission.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Permission;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3B0D7CD282098DD163A1DD13F00002A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5685D9475E804144BF3A6CBDE5EF9B32 /* Permission.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Permission/Permission-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Permission/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Permission/Permission.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Permission;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E425C967F9755B9287E6BC98A4117AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8D29B2F2179B696222F03A15410E4A3 /* CHTCollectionViewWaterfallLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -312,7 +573,7 @@
 				PRODUCT_NAME = CHTCollectionViewWaterfallLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +582,42 @@
 			};
 			name = Debug;
 		};
-		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+		946D58F85BE04C02DC599A1BB65C2D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8D29B2F2179B696222F03A15410E4A3 /* CHTCollectionViewWaterfallLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CHTCollectionViewWaterfallLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -365,83 +661,12 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		667CD10F94992A227813B9B120EB1E6A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47446FA5C179E69B6396F408753DF61A /* Pods-PatientManagement.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PatientManagement/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PatientManagement/Pods-PatientManagement.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PatientManagement;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9CC134B67098A9BE1B3B7F4C4A3CB841 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D17EE5BB82CB3A9D4141DA015BFA103D /* CHTCollectionViewWaterfallLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CHTCollectionViewWaterfallLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9E9DC8430AD2E9333F266EAF00ADA6B5 /* Debug */ = {
+		A48BC42E1D58BD3C4B5266D735949E69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A84C1766775582C3D720195A18603281 /* Pods-PatientManagement.debug.xcconfig */;
 			buildSettings = {
@@ -524,23 +749,61 @@
 			};
 			name = Release;
 		};
+		D389FFDCFC58DA7A34E5923E64DE468C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47446FA5C179E69B6396F408753DF61A /* Pods-PatientManagement.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PatientManagement/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PatientManagement/Pods-PatientManagement.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PatientManagement;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				643C76AA582046977B7877822ED7A258 /* Debug */,
+				9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */,
 				C03B8870130C98D1B02B59D003687524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		457FB0E1D43188B6B608EC3BC00771CB /* Build configuration list for PBXNativeTarget "Pods-PatientManagement" */ = {
+		50C8190EEC7A5970572A234A1FBAD21B /* Build configuration list for PBXNativeTarget "Pods-PatientManagement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E9DC8430AD2E9333F266EAF00ADA6B5 /* Debug */,
-				667CD10F94992A227813B9B120EB1E6A /* Release */,
+				A48BC42E1D58BD3C4B5266D735949E69 /* Debug */,
+				D389FFDCFC58DA7A34E5923E64DE468C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -548,8 +811,17 @@
 		7151B549D788AB03287452A1205A14CD /* Build configuration list for PBXNativeTarget "CHTCollectionViewWaterfallLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1CD9F9A6432852C3F67E18ACC05EEBDC /* Debug */,
-				9CC134B67098A9BE1B3B7F4C4A3CB841 /* Release */,
+				8E425C967F9755B9287E6BC98A4117AA /* Debug */,
+				946D58F85BE04C02DC599A1BB65C2D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C5E54A970C128F5E264281F37ECEDD /* Build configuration list for PBXNativeTarget "Permission" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0D7CD282098DD163A1DD13F00002A3 /* Debug */,
+				15122008E1D554574630F692722AC13C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

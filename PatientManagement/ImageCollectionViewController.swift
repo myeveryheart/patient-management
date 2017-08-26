@@ -11,7 +11,7 @@ import CHTCollectionViewWaterfallLayout
 
 private let reuseIdentifier = "Cell"
 
-class ImageCollectionViewController: UIViewController, UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout, UIImagePickerControllerDelegate {
+class ImageCollectionViewController: UIViewController, UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     lazy var collectionView: UICollectionView = {
         let layout = CHTCollectionViewWaterfallLayout()
@@ -19,13 +19,16 @@ class ImageCollectionViewController: UIViewController, UICollectionViewDataSourc
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.backgroundColor = .white
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        collectionView.register(CHTCollectionViewWaterfallCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         return collectionView
     }()
+    
+    var images = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.images = FileHelper.readUnarchivedFiles()
         self.view.addSubview(self.collectionView)
     }
     
@@ -45,6 +48,22 @@ class ImageCollectionViewController: UIViewController, UICollectionViewDataSourc
     func updateLayoutForOrientation(_ orientation: UIInterfaceOrientation) {
         (self.collectionView.collectionViewLayout as! CHTCollectionViewWaterfallLayout).columnCount = UIInterfaceOrientationIsPortrait(orientation) ? 2 : 3
     }
+    
+    @IBAction func AddPhoto(_ sender: UIBarButtonItem) {
+        let controller = UIAlertController(title: "添加图片", message: nil, preferredStyle: .actionSheet)
+        let albumAction = UIAlertAction(title: "从相册选取", style: .default) { (_) in
+            PhotoHelper.openAlbum(controller: self)
+        }
+        let cameraAction = UIAlertAction(title: "拍照", style: .default) { (_) in
+            PhotoHelper.openCamera(controller: self)
+        }
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        controller.addAction(albumAction)
+        controller.addAction(cameraAction)
+        controller.addAction(cancelAction)
+        self.present(controller, animated: true, completion: nil)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -66,20 +85,20 @@ class ImageCollectionViewController: UIViewController, UICollectionViewDataSourc
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return self.images.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CHTCollectionViewWaterfallCell
+        
         // Configure the cell
-    
+        cell.imageView.image = UIImage(contentsOfFile: self.images[indexPath.row])
         return cell
     }
 
@@ -96,7 +115,10 @@ class ImageCollectionViewController: UIViewController, UICollectionViewDataSourc
         //获取选择的原图
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         // 存储图片
-        
+        FileHelper.saveImageToUnarchived(image)
+        // 刷新
+        self.images = FileHelper.readUnarchivedFiles()
+        self.collectionView.reloadData()
         //图片控制器退出
         picker.dismiss(animated: true, completion: nil)
     }

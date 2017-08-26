@@ -5,5 +5,7 @@ use_frameworks!
 target 'PatientManagement' do
 
 pod 'CHTCollectionViewWaterfallLayout/Swift'
+pod 'Permission/Camera'
+pod 'Permission/Photos'
 
 end

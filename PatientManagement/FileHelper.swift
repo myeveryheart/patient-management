@@ -21,11 +21,23 @@ class FileHelper {
     }
     
     static func readUnarchivedFiles() -> Array<String> {
-        let files = try! fileManager.contentsOfDirectory(atPath: cachesDirectory)
-        return files
+        let fileNames = try! fileManager.contentsOfDirectory(atPath: cachesDirectory)
+        var pngFiles = [String]()
+        for fileName in fileNames {
+            if fileName.hasSuffix(".png") {
+                let pngFile = cachesDirectory + "/" + fileName
+                pngFiles.append(pngFile)
+            }
+        }
+        return pngFiles
     }
     
-    static func saveImage(_ image: UIImage) {
-        
+    static func saveImage(_ image: UIImage, to: URL) {
+        try! UIImagePNGRepresentation(image)!.write(to: to)
+    }
+    
+    static func saveImageToUnarchived(_ image: UIImage) {
+        let fileName = String(lround(Date().timeIntervalSince1970)) + ".png"
+        saveImage(image, to: URL(fileURLWithPath: cachesDirectory).appendingPathComponent(fileName))
     }
 }

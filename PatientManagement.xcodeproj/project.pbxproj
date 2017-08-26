@@ -14,6 +14,7 @@
 		7D9FB6E81F4935D7009B7E20 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FB6E71F4935D7009B7E20 /* ImageCollectionViewController.swift */; };
 		7D9FB6EA1F496FBD009B7E20 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FB6E91F496FBD009B7E20 /* FileHelper.swift */; };
 		7D9FB6EC1F497688009B7E20 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FB6EB1F497688009B7E20 /* PhotoHelper.swift */; };
+		7D9FB6EE1F5113D5009B7E20 /* CHTCollectionViewWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FB6ED1F5113D5009B7E20 /* CHTCollectionViewWaterfallCell.swift */; };
 		D4EF874FBE606C9FFDD2C41A /* Pods_PatientManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D072017E52FC9C6E97FEF0 /* Pods_PatientManagement.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		7D9FB6E71F4935D7009B7E20 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 		7D9FB6E91F496FBD009B7E20 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		7D9FB6EB1F497688009B7E20 /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
+		7D9FB6ED1F5113D5009B7E20 /* CHTCollectionViewWaterfallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallCell.swift; sourceTree = "<group>"; };
 		E5D072017E52FC9C6E97FEF0 /* Pods_PatientManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				7D9FB6D21F492CC6009B7E20 /* AppDelegate.swift */,
 				7D9FB6D61F492CC6009B7E20 /* Main.storyboard */,
 				7D9FB6E71F4935D7009B7E20 /* ImageCollectionViewController.swift */,
+				7D9FB6ED1F5113D5009B7E20 /* CHTCollectionViewWaterfallCell.swift */,
 				7D9FB6E91F496FBD009B7E20 /* FileHelper.swift */,
 				7D9FB6EB1F497688009B7E20 /* PhotoHelper.swift */,
 				7D9FB6D91F492CC6009B7E20 /* Assets.xcassets */,
@@ -171,13 +174,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PatientManagement-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		597528DD7A8CF42577AE0135 /* [CP] Copy Pods Resources */ = {
@@ -201,9 +207,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PatientManagement/Pods-PatientManagement-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Permission/Permission.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Permission.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -217,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9FB6EE1F5113D5009B7E20 /* CHTCollectionViewWaterfallCell.swift in Sources */,
 				7D9FB6E81F4935D7009B7E20 /* ImageCollectionViewController.swift in Sources */,
 				7D9FB6D31F492CC6009B7E20 /* AppDelegate.swift in Sources */,
 				7D9FB6EC1F497688009B7E20 /* PhotoHelper.swift in Sources */,

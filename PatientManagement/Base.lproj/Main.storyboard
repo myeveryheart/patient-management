@@ -56,7 +56,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TBE-5y-kFT"/>
+                    <navigationItem key="navigationItem" id="TBE-5y-kFT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yOD-ID-gD8">
+                            <connections>
+                                <action selector="AddPhoto:" destination="v45-OI-tm0" id="mM3-hG-77R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5Q-9k-CIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
