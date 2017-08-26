@@ -105,21 +105,23 @@ class ImageCollectionViewController: UIViewController, UICollectionViewDataSourc
     // MARK: CHTCollectionViewDelegateWaterfallLayout
     func collectionView (_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                                   sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 400, height: 400)
+        let image = UIImage(contentsOfFile: self.images[indexPath.row])
+        return image!.size
     }
     
     // MARK: UIImagePickerControllerDelegate
     
     //选择图片成功后代理
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        //获取选择的原图
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        // 存储图片
-        FileHelper.saveImageToUnarchived(image)
-        // 刷新
-        self.images = FileHelper.readUnarchivedFiles()
-        self.collectionView.reloadData()
         //图片控制器退出
-        picker.dismiss(animated: true, completion: nil)
+        picker.dismiss(animated: true, completion: {
+            //获取选择的原图
+            let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+            // 存储图片
+            FileHelper.saveImageToUnarchived(image)
+            // 刷新
+            self.images = FileHelper.readUnarchivedFiles()
+            self.collectionView.reloadData()
+        })
     }
 }
